@@ -1,12 +1,103 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: {{projectTitle}}</title>
+    <title>Кэт энерджи: Функциональное питание для котов</title>
   </head>
-  <body>
+  <body class="page__body">
+    <header class="page-header">
+      <nav class="main-nav">
+        <a class="page-header__logo">
+          <img class="page-header__logo-icon" src="./img/logo-icon.svg" width="34" height="38" alt="Cat-Energy">
+          <img class="page-header__logo-title" src="./img/logo-title.svg" width="101" height="19" alt="">
+        </a>
+        <button class="page-header__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item main-nav__item--current">
+              <a class="main-nav__link" href="#">Главная</a>
+            </li>
+            <li class="main-nav__item main-nav__item--current">
+              <a class="main-nav__link" href="#">Каталог продукции</a>
+            </li>
+            <li class="main-nav__item main-nav__item--current">
+              <a class="main-nav__link" href="#">Подбор программы</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="page-main">
+      <div class="promo">
+        <header class="page-main__header">
+          <h1 class="promo__heading">Функциональное питание для котов</h1>
+          <p class="promo__text">Занялся собой? Займись котом!</p>
+          <img class="promo__img" src="./img/promo.png" width="280" height="270">
+          <a class="promo__button buton" href="#">Подобрать программу</a>
+        </header>
+      </div>
+      <div class="page-main__section">
+        <section class="catalog">
+          <h2 class="visually-hidden">Разделы каталога</h2>
+          <article class="catalog__item">
+            <h3 class="catalog__heading">Похудение</h3>
+            <p class="catalog__text">
+              Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
+            </p>
+            <a class="catalog__link" href="#">Каталог Slim</a>
+          </article>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
+          <article class="catalog__item">
+            <h3 class="catalog__heading">Набор массы</h3>
+            <p class="catalog__text">
+              Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
+            </p>
+            <a class="catalog__link" href="#">Каталог Pro</a>
+          </article>
+        </section>
+        <section class="process">
+          <h2 class="page-main__heading">Как это работает</h2>
+          <ol class="process__list">
+            <li class="process__item process__item--leaf">
+              <p class="procces__text">Функциональное питание содержит только полезные питательные вещества.</p>
+            </li>
+            <li class="process__item process__item--tub">
+              <p class="procces__text">Функциональное питание содержит только полезные питательные вещества.</p>
+            </li>
+            <li class="process__item process__item--eat">
+              <p class="procces__text">Функциональное питание содержит только полезные питательные вещества.</p>
+            </li>
+            <li class="process__item process__item--alarm">
+              <p class="procces__text">Функциональное питание содержит только полезные питательные вещества.</p>
+            </li>
+          </ol>
+        </section>
+        <section class="example">
+          <h2 class="page-main__heading">Живой пример</h2>
+          <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+          <dl class="example__list">
+            <dt class="example__title">Снижение веса</dt>
+            <dd class="example__definition">5 кг</dd>
 
+            <dt class="example__title">Затрачено времени</dt>
+            <dd class="example__definition">60 дней</dd>
+          </dl>
+
+          <p class="example__spending">Затраты на питание: 15 000 руб.</p>
+
+          <div class="example__images">
+            <img class="example__image" src="./img/cat-fat.jpg" width="280" height="232" alt="Кот до употребления корма: выглядит ленивым, толстым и страшным">
+            <img class="example__image" src="./img/cat-skinny.jpg" width="280" height="232" alt="Кот после употребления корма: выглядит молодым, худым и бодрым">
+          </div>
+
+          <div class="example__switcher">
+            <button class="example__button" type="button">Было</button>
+            <button class="example__button" type="button">Стало</button>
+          </div>
+        </section>
+      </div>
+    </main>
   </body>
 </html>
