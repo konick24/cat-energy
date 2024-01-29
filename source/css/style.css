@@ -1,0 +1,184 @@
+@font-face {
+  font-family: "Oswald";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/oswaldregular.woff2") format("woff2"), url("../fonts/oswaldregular.woff") format("woff");
+}
+@font-face {
+  font-family: "Oswald";
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/oswaldmedium.woff2") format("woff2"), url("../fonts/oswaldmedium.woff") format("woff");
+}
+.button {
+  color: #ffffff;
+  background-color: #68B738;
+  border: none;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.page {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.page__body {
+  margin: 0;
+}
+
+.page-header {
+  padding: 10px 20px 18px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+}
+
+.main-nav__list {
+  font-size: 20px;
+  line-height: 20px;
+  list-style: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.main-nav__link {
+  text-decoration: none;
+  color: #000000;
+}
+
+.page-main__heading {
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+}
+
+.promo {
+  padding: 20px;
+  color: #ffffff;
+  background-color: #68B738;
+  background-image: url("../img/background-promo.jpg");
+  text-align: center;
+}
+
+.promo__heading {
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+}
+
+.promo__text {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  line-height: 14px;
+}
+
+.catalog__item {
+  padding: 20px;
+  background-color: #f2f2f2;
+}
+
+.catalog__heading {
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 37px;
+  text-transform: uppercase;
+}
+
+.catalog__link {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  color: #000000;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.process {
+  padding: 20px;
+}
+
+.process__list {
+  list-style: none;
+}
+
+.process__text {
+  margin: 0;
+}
+
+.example {
+  padding: 20px;
+  background-color: #EAEAEA;
+}
+
+.example__list {
+  text-align: center;
+}
+
+.example__title {
+  font-size: 12px;
+}
+
+.example__definition {
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.example__spending {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+}
+
+.example__button {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.contacts {
+  padding: 20px;
+}
+
+.contacts__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #111111;
+}
+
+.contacts__text {
+  line-height: 20px;
+  color: #444444;
+}
+
+.page-footer {
+  padding: 20px;
+  background-color: #f2f2f2;
+}
+
+.copyright {
+  font-size: 16px;
+  text-decoration: none;
+  color: #444444;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+/*# sourceMappingURL=style.css.map */
