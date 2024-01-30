@@ -1,8 +1,8 @@
 .button {
   color: #ffffff;
-  background-color: #68B738;
+  background-color: $color-primary;
   border: none;
-  font-family: "Oswald", sans-serif;
+  font-family: $font-heading;
   text-transform: uppercase;
   text-decoration: none;
 }

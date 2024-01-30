@@ -1,16 +1,15 @@
-.contacts {
+.show-more {
   padding: 20px;
 }
 
-.contacts__title {
+.show-more__heading {
   font-family: $font-heading;
-  font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
   color: #111111;
 }
 
-.contacts__text {
-  line-height: 20px;
+.show-more__text {
+  font-size: 12px;
   color: #444444;
 }

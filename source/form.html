@@ -7,7 +7,7 @@
   </head>
   <body class="page__body">
     <header class="page-header">
-      <nav class="main-nav">
+      <nav class="page-header__nav">
         <a class="page-header__logo" href="./index.html">
           <img class="page-header__logo-icon" src="./img/logo-icon.svg" width="34" height="38" alt="Cat-Energy">
           <img class="page-header__logo-title" src="./img/logo-title.svg" width="101" height="19" alt="">
@@ -15,25 +15,23 @@
         <button class="page-header__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
-            <li class="main-nav__item main-nav__item">
-              <a class="main-nav__link" href="./index.html">Главная</a>
-            </li>
-            <li class="main-nav__item main-nav__item">
-              <a class="main-nav__link" href="./catalog.html">Каталог продукции</a>
-            </li>
-            <li class="main-nav__item main-nav__item--current">
-              <a class="main-nav__link" href="#">Подбор программы</a>
-            </li>
-          </ul>
-        </div>
+        <ul class="page-header__wrapper main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="./index.html">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="./catalog.html">Каталог продукции</a>
+          </li>
+          <li class="main-nav__item main-nav__item--current">
+            <a class="main-nav__link" href="#">Подбор программы</a>
+          </li>
+        </ul>
       </nav>
     </header>
 
     <main class="page-main">
       <h1 class="page-main__heading">Подбор программы</h1>
-      <p class="page-form__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+      <p class="page-main__subheading">Заполните анкету, и мы подберем программу питания для вашего кота</p>
       <section class="page-main__section form">
         <h2 class="visually-hidden">Форма анкеты</h2>
         <form class="page-form__wrapper form__body">
@@ -93,7 +91,7 @@
                 </label>
               </li>
               <li class="field-group__item">
-                <label class="field-group__item">
+                <label class="field">
                   <span class="field__name">Телефон:*</span>
                   <input class="field__input" name="phone" type="tel" placeholder="+7 (000) 000 00 00" value="8 (960) 900-60-90" required>
                 </label>
@@ -101,9 +99,9 @@
             </ul>
           </fieldset>
           <div class="form-wrapper field-group">
-            <label class="comment__heading" for="comment">Комментарий</label>
+            <label class="field-group__heading" for="comment">Комментарий</label>
             <div class="field">
-              <textarea class="field__input" name="comment" id="comment" rows="5" placeholder="Введите текст комментария">Расскажите обо всех повaдках кота</textarea>
+              <textarea class="field__input" name="comment" id="comment" rows="5" placeholder="Расскажите обо всех повaдках кота"></textarea>
             </div>
           </div>
           <fieldset class="form__wrapper field-group">
@@ -139,52 +137,44 @@
           <p class="form__additional">* — Обязательные поля</p>
         </form>
       </section>
-      <footer class="page-main__footer">
-        <div class="contacts">
-          <h2 class="visually-hidden">Контакты</h2>
-          <p class="contacts__title">
-            Приглашаем к сотрудничеству дилеров!
-          </p>
-          <p class="contacts__text">
-            ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
-          </p>
-          <img class="contacts__pic" src="./img/location.png" width="320" height="362" alt="карта к нашему офису">
-        </div>
-        <div class="page-footer__logo">
-          <img class="logo__pic" src="./img/logo-title.svg" width="128" height="24" alt="Логотип Cat-Energy">
-        </div>
+      <footer class="page-main__footer contacts">
+        <h2 class="visually-hidden">Контакты</h2>
+        <p class="contacts__title">
+          Приглашаем к сотрудничеству дилеров!
+        </p>
+        <p class="contacts__text">
+          ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+        </p>
+        <img class="contacts__pic" src="./img/location.png" width="320" height="362" alt="карта к нашему офису">
       </footer>
     </main>
 
     <footer class="page-footer">
-      <div class="footer-wrapper">
-        <div class="page-footer__social">
-          <ul class="social__list">
-            <li class="social-item">
-              <a class="social__link social__link--vkontakte" href="#">
-                <span class="visually-hidden">Вконтакте</span>
-              </a>
-            </li>
-            <li class="social-item">
-              <a class="social__link social__link--instagram" href="#">
-                <span class="visually-hidden">Instagram</span>
-              </a>
-            </li>
-            <li class="social-item">
-              <a class="social__link social__link--facebook" href="#">
-                <span class="visually-hidden">Facebook</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="page-footer__copyright">
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+      <div class="page-footer__logo">
+        <img class="logo__pic" src="./img/logo-title.svg" width="128" height="24" alt="Логотип Cat-Energy">
+      </div>
+        <ul class="page-footer__social social__list">
+          <li class="social-item">
+            <a class="social__link social__link--vkontakte" href="#">
+              <span class="visually-hidden">Вконтакте</span>
+            </a>
+          </li>
+          <li class="social-item">
+            <a class="social__link social__link--instagram" href="#">
+              <span class="visually-hidden">Instagram</span>
+            </a>
+          </li>
+          <li class="social-item">
+            <a class="social__link social__link--facebook" href="#">
+              <span class="visually-hidden">Facebook</span>
+            </a>
+          </li>
+        </ul>
+          <a class="page-footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">
             <span class="visually-hidden">Разработано в</span>
             HTML Academy
             <img class="copyright__logo-html" src="./img/htmlacademy.svg" width="27" height="34" alt="Логотип партнёра html academy">
           </a>
-        </div>
-      </div>
     </footer>
   </body>
 </html>

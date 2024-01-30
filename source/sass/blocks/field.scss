@@ -1,0 +1,13 @@
+.field {
+  font-family: $font-heading;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #444444;
+}
+
+.field__input {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}

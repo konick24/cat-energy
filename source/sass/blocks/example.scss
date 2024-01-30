@@ -12,19 +12,19 @@
 }
 
 .example__definition {
-  font-family: "Oswald", sans-serif;
+  font-family: $font-heading;
   font-size: 24px;
   line-height: 24px;
   text-transform: uppercase;
 }
 
 .example__spending {
-  font-family: "Oswald", sans-serif;
+  font-family: $font-heading;
   text-transform: uppercase;
 }
 
 .example__button {
-  font-family: "Oswald", sans-serif;
+  font-family: $font-heading;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;

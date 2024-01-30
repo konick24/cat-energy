@@ -1,20 +1,20 @@
 .promo {
   padding: 20px;
   color: #ffffff;
-  background-color: #68B738;
+  background-color: $color-primary;
   background-image: url("../img/background-promo.jpg");
   text-align: center;
 }
 
 .promo__heading {
-  font-family: "Oswald", sans-serif;
+  font-family: $font-heading;
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
 }
 
 .promo__text {
-  font-family: "Oswald", sans-serif;
+  font-family: $font-heading;
   text-transform: uppercase;
   line-height: 14px;
 }
