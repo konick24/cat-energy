@@ -2,19 +2,22 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Кэт энерджи: Функциональное питание для котов</title>
     <link href="./css/style.css" rel="stylesheet">
   </head>
   <body class="page__body">
     <header class="page-header">
       <nav class="page-header__nav">
-        <a class="page-header__logo">
-          <img class="page-header__logo-icon" src="./img/logo-icon.svg" width="34" height="38" alt="Cat-Energy">
-          <img class="page-header__logo-title" src="./img/logo-title.svg" width="101" height="19" alt="">
-        </a>
-        <button class="page-header__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
+        <div class="page-header__bar">
+          <a class="page-header__logo logo">
+            <img class="logo__icon" src="./img/logo-icon.svg" width="34" height="38" alt="Cat-Energy">
+            <img class="logo__title" src="./img/logo-title.svg" width="101" height="19" alt="">
+          </a>
+          <button class="page-header__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+        </div>
         <ul class="page-header__wrapper main-nav__list">
           <li class="main-nav__item main-nav__item--current">
             <a class="main-nav__link" href="#">Главная</a>
@@ -30,10 +33,12 @@
     </header>
     <main class="page-main">
       <header class="page-main__header promo">
-        <h1 class="promo__heading">Функциональное питание для котов</h1>
-        <p class="promo__text">Занялся собой? Займись котом!</p>
-        <img class="promo__img" src="./img/promo.png" width="280" height="270" alt="">
-        <a class="promo__button button" href="#">Подобрать программу</a>
+        <div class="promo__container">
+          <h1 class="promo__heading">Функциональное питание для котов</h1>
+          <p class="promo__text">Занялся собой? Займись котом!</p>
+          <img class="promo__img" src="./img/promo.png" width="280" height="270" alt="">
+          <a class="promo__button button" href="#">Подобрать программу</a>
+        </div>
       </header>
       <section class="page-main__section catalog">
         <h2 class="visually-hidden">Разделы каталога</h2>

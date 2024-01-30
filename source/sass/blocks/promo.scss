@@ -1,9 +1,23 @@
 .promo {
-  padding: 20px;
-  color: #ffffff;
-  background-color: $color-primary;
-  background-image: url("../img/background-promo.jpg");
   text-align: center;
+  @media (max-width: 767px){
+    color: #ffffff;
+    background-color: $color-primary;
+    background-image: url("../img/background-promo.jpg"), linear-gradient(#63a63b 0, #63a63b 302px, #ffffff 302px);
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    color: #000000;
+    background-color: transparent;
+    text-align: start;
+  }
+}
+
+.promo__container {
+  width: 280px;
+  margin: 0 auto;
 }
 
 .promo__heading {
@@ -17,4 +31,8 @@
   font-family: $font-heading;
   text-transform: uppercase;
   line-height: 14px;
+}
+
+.promo__button {
+  width: 100%;
 }

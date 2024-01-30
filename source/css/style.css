@@ -12,7 +12,15 @@
   font-display: swap;
   src: url("../fonts/oswaldmedium.woff2") format("woff2"), url("../fonts/oswaldmedium.woff") format("woff");
 }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 .button {
+  padding: 10px;
+  display: inline-block;
   color: #ffffff;
   background-color: #68b738;
   border: none;
@@ -32,12 +40,36 @@
 }
 
 .page-header {
-  padding: 10px 20px 18px;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
 }
 
+.page-header__bar {
+  width: 320px;
+  padding: 10px 20px 18px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 34px 1fr 34px;
+  gap: 16px;
+}
+
+.page-header__logo {
+  grid-column: 1/3;
+  display: grid;
+  grid-template-columns: 34px 1fr;
+  gap: 16px;
+  align-items: center;
+}
+
+.page-header__toggle {
+  width: 40px;
+  height: 40px;
+  border: none;
+}
+
 .main-nav__list {
+  margin: 0;
+  padding: 0;
   font-size: 20px;
   line-height: 20px;
   list-style: none;
@@ -48,6 +80,10 @@
 .main-nav__link {
   text-decoration: none;
   color: #000000;
+}
+
+.page-main__header {
+  padding: 27px 0 10px;
 }
 
 .page-main__heading {
@@ -63,11 +99,28 @@
 }
 
 .promo {
-  padding: 20px;
-  color: #ffffff;
-  background-color: #68b738;
-  background-image: url("../img/background-promo.jpg");
   text-align: center;
+}
+@media (max-width: 767px) {
+  .promo {
+    color: #ffffff;
+    background-color: #68b738;
+    background-image: url("../img/background-promo.jpg"), linear-gradient(#63a63b 0, #63a63b 302px, #ffffff 302px);
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+  }
+}
+@media (min-width: 768px) {
+  .promo {
+    color: #000000;
+    background-color: transparent;
+    text-align: start;
+  }
+}
+
+.promo__container {
+  width: 280px;
+  margin: 0 auto;
 }
 
 .promo__heading {
@@ -81,6 +134,10 @@
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
   line-height: 14px;
+}
+
+.promo__button {
+  width: 100%;
 }
 
 .catalog__item {
@@ -289,6 +346,14 @@
   font-size: 16px;
   text-transform: uppercase;
   color: #222222;
+}
+
+.logo img {
+  display: block;
+}
+
+.logo__title {
+  justify-self: center;
 }
 
 .visually-hidden {
