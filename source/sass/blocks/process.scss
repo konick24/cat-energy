@@ -1,9 +1,34 @@
 .process {
-  padding: 20px;
+  width: 280px;
+  margin: 0 auto;
+  padding: 20px 0 50px;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+  }
 }
 
 .process__list {
+  margin: 0;
+  padding: 0;
   list-style: none;
+}
+
+.process__item {
+  padding-left: 80px;
+  position: relative;
+  margin-bottom: 26px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 0;
+    left: 0;
+    background-color: $color-primary;
+    margin-top: -2px;
+  }
 }
 
 .process__text {

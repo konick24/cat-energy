@@ -3,14 +3,34 @@
   font-weight: 400;
 }
 
+.page-header__nav {
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    padding: 24px 0;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 174px 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+  }
+}
 
 .page-header__bar {
   width: 320px;
-  padding: 10px 20px 18px;
+  padding: 10px 20px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 34px 1fr 34px;
   gap: 16px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding: 0;
+    width: 174px;
+    grid-template-columns: 34px 1fr;
+  }
 }
 
 .page-header__logo {
@@ -25,4 +45,8 @@
   width: 40px;
   height: 40px;
   border: none;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
