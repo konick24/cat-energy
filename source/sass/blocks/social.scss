@@ -1,0 +1,24 @@
+.social__list {
+  padding: 16px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style: none;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    width: 368px;
+    border: none;
+  }
+}
+
+.social__link {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-color: #e5e5e5;
+}

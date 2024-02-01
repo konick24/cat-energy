@@ -12,6 +12,12 @@
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    counter-reset: process;
+  }
 }
 
 .process__item {
@@ -29,8 +35,38 @@
     background-color: $color-primary;
     margin-top: -2px;
   }
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    padding-top: 150px;
+    padding-right: 90px;
+    counter-increment: process;
+    margin-bottom: 94px;
+
+    &::before {
+      margin: 0;
+      width: 80px;
+      height: 80px;
+      top: 40px;
+      left: 0;
+    }
+
+    &::after {
+      content: counter(process);
+      position: absolute;
+      z-index: -1;
+      top: 0px;
+      left: 120px;
+      font-family: $font-heading;
+      font-size: 280px;
+      line-height: 280px;
+      color: #f2f2f2;
+    }
+  }
 }
 
 .process__text {
   margin: 0;
+
+
 }
