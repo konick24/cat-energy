@@ -6,6 +6,11 @@
   @media (min-width: $tablet-width) {
     width: 708px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    padding: 71px 0 20px;
+  }
 }
 
 .process__list {
@@ -16,7 +21,12 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    column-gap: 60px;
     counter-reset: process;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
@@ -39,7 +49,7 @@
   @media (min-width: $tablet-width) {
     padding: 0;
     padding-top: 150px;
-    padding-right: 90px;
+    padding-right: 75px;
     counter-increment: process;
     margin-bottom: 94px;
 
@@ -62,6 +72,10 @@
       line-height: 280px;
       color: #f2f2f2;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 0;
   }
 }
 

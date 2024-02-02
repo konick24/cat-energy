@@ -1,5 +1,9 @@
 .contacts {
   background-color: #ffffff;
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+  }
 }
 
 .contacts__container {
@@ -14,6 +18,15 @@
     grid-template-columns: 170px 170px;
     justify-content: space-between;
     padding: 56px 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 95px;
+    left: 110px;
+    width: 565px;
+    background-color: #ffffff;
+    padding: 56px 80px;
   }
 }
 

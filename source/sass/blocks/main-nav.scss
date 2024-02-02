@@ -18,6 +18,11 @@
     justify-content: flex-end;
     border: none;
   }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .main-nav__item {
@@ -38,6 +43,11 @@
       background-color: $color-primary;
     }
   }
+  @media (min-width: $desktop-width) {
+    &::after {
+      background-color: #ffffff;
+    }
+  }
 }
 
 .main-nav__link {
@@ -50,5 +60,9 @@
   @media (min-width: $tablet-width) {
     padding: 17px;
     border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    color: #ffffff;
   }
 }

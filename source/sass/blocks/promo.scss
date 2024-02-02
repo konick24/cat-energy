@@ -13,6 +13,20 @@
     background-color: transparent;
     text-align: start;
   }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      top: -165px;
+      left: 50%;
+      width: 720px;
+      height: 694px;
+      z-index: -2;
+      background-color: #68b738;
+    }
+  }
 }
 
 .promo__container {
@@ -23,6 +37,11 @@
     position: relative;
     width: 708px;
     padding: 0 90px 526px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    padding: 58px 695px 185px 80px;
   }
 }
 
@@ -59,6 +78,13 @@
     z-index: -1;
     width: 709px;
     height: 609px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 0;
+    left: 472px;
+    width: 552px;
+    height: 499px;
   }
 }
 

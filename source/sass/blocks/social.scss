@@ -14,6 +14,10 @@
     width: 368px;
     border: none;
   }
+
+  @media (min-width: $desktop-width) {
+    justify-self: center;
+  }
 }
 
 .social__link {
