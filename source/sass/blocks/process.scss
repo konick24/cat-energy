@@ -1,14 +1,7 @@
 .process {
-  width: 280px;
-  margin: 0 auto;
   padding: 20px 0 50px;
 
-  @media (min-width: $tablet-width) {
-    width: 708px;
-  }
-
   @media (min-width: $desktop-width) {
-    width: 1220px;
     padding: 71px 0 20px;
   }
 }

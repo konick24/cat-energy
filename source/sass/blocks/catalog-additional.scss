@@ -1,11 +1,27 @@
 .catalog-additional {
-  padding: 20px;
+  padding: 20px 0;
+}
+
+.catalog-additional__container {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 80px;
+  }
 }
 
 .catalog-additional__heading {
   font-size: 24px;
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / -1;
+  }
 }
 
 .catalog-additional__list {
   list-style: none;
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / 4;
+  }
 }

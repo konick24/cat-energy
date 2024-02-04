@@ -1,6 +1,7 @@
 .promo {
   text-align: center;
   @media (max-width: 767px){
+    padding: 27px 0 20px;
     color: #ffffff;
     background-color: #63a63b;
     background-image: url("../img/background-promo.jpg"), linear-gradient(#63a63b 0, #63a63b 302px, #ffffff 302px);
@@ -30,17 +31,12 @@
 }
 
 .promo__container {
-  width: 280px;
-  margin: 0 auto;
-
   @media (min-width: $tablet-width) {
     position: relative;
-    width: 708px;
     padding: 0 90px 526px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 1220px;
     padding: 58px 695px 185px 80px;
   }
 }

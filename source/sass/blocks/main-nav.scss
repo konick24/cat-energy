@@ -29,23 +29,25 @@
   @media (min-width: $tablet-width) {
     position: relative;
   }
-}
 
-.main-nav__item--current {
-  @media (min-width: $tablet-width) {
-    &::after {
-      content: "";
-      position: absolute;
-      right: 17px;
-      left: 17px;
-      bottom: 5px;
-      height: 2px;
-      background-color: $color-primary;
+  &--current {
+    @media (min-width: $tablet-width) {
+      &::after {
+        content: "";
+        position: absolute;
+        right: 17px;
+        left: 17px;
+        bottom: 5px;
+        height: 2px;
+        background-color: $color-primary;
+      }
     }
   }
-  @media (min-width: $desktop-width) {
-    &::after {
-      background-color: #ffffff;
+  & .main {
+    @media (min-width: $desktop-width) {
+      &::after {
+        background-color: #ffffff;
+      }
     }
   }
 }
@@ -62,7 +64,9 @@
     border: none;
   }
 
-  @media (min-width: $desktop-width) {
-    color: #ffffff;
+  &--main {
+    @media (min-width: $desktop-width) {
+      color: #ffffff;
+    }
   }
 }

@@ -13,16 +13,9 @@
 }
 
 .example__container {
-  width: 280px;
-  margin: 0 auto;
   padding-top: 5px;
 
-  @media (min-width: $tablet-width) {
-    width: 708px;
-  }
-
   @media (min-width: $desktop-width) {
-    width: 1220px;
     padding-top: 43px;
     display: grid;
     grid-template-columns: 1fr 1fr;

@@ -1,7 +1,3 @@
-.page-main__header {
-  padding: 27px 0 20px;
-}
-
 .page-main__heading {
   font-family: $font-heading;
   font-size: 36px;
@@ -17,6 +13,7 @@
 }
 
 .page-main__subheading {
+  margin: 5px 0 19px;
   font-family: $font-heading;
   text-transform: uppercase;
 }

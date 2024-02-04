@@ -9,13 +9,15 @@
   <body class="page__body">
     <header class="page-header">
       <nav class="page-header__nav">
-        <a class="page-header__logo" href="./index.html">
-          <img class="page-header__logo-icon" src="./img/logo-icon.svg" width="34" height="38" alt="Cat-Energy">
-          <img class="page-header__logo-title" src="./img/logo-title.svg" width="101" height="19" alt="">
-        </a>
-        <button class="page-header__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
+        <div class="page-header__bar">
+          <a class="page-header__logo" href="./index.html">
+            <img class="page-header__logo-icon" src="./img/logo-icon.svg" width="34" height="38" alt="Cat-Energy">
+            <img class="page-header__logo-title" src="./img/logo-title.svg" width="101" height="19" alt="">
+          </a>
+          <button class="page-header__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+        </div>
         <ul class="page-header__wrapper main-nav__list">
           <li class="main-nav__item">
             <a class="main-nav__link" href="./index.html">Главная</a>
@@ -31,12 +33,14 @@
     </header>
 
     <main class="page-main">
-      <h1 class="page-main__heading">Подбор программы</h1>
-      <p class="page-main__subheading">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+      <header class="page-main__header container">
+        <h1 class="page-main__heading">Подбор программы</h1>
+        <p class="page-main__subheading">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+      </header>
       <section class="page-main__section form">
         <h2 class="visually-hidden">Форма анкеты</h2>
-        <form class="page-form__wrapper form__body">
-          <fieldset class="form__wrapper field-group">
+        <form class="form__container container">
+          <fieldset class="form__group form__group--cat field-group">
             <legend class="visually-hidden">Данные кота</legend>
             <ul class="field-group__list">
               <li class="field-group__item">
@@ -59,7 +63,7 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="form__wrapper field-group">
+          <fieldset class="form__group form__group--target field-group">
             <legend class="visually-hidden">Цель программы</legend>
             <ul class="field-group__list">
               <li class="field-group__item">
@@ -82,9 +86,9 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="form__wrapper field-group">
+          <fieldset class="form__group form__group--contacts field-group">
             <legend class="field-group__heading">Контактные данные (владельца кота)</legend>
-            <ul class="field-group__list">
+            <ul class="field-group__list field-group__list--contacts">
               <li class="field-group__item">
                 <label class="field">
                   <span class="field__name">E-mail:*</span>
@@ -99,15 +103,15 @@
               </li>
             </ul>
           </fieldset>
-          <div class="form-wrapper field-group">
+          <div class="form-group form__group--comment field-group">
             <label class="field-group__heading" for="comment">Комментарий</label>
             <div class="field">
               <textarea class="field__input" name="comment" id="comment" rows="5" placeholder="Расскажите обо всех повaдках кота"></textarea>
             </div>
           </div>
-          <fieldset class="form__wrapper field-group">
+          <fieldset class="form__group form__group--additional field-group">
             <legend class="field-group__heading">Дополнительно</legend>
-            <ul class="field-group__list">
+            <ul class="field-group__list field-group__list--additional">
               <li class="field-group__item field-group__item--checkbox">
                 <label class="field">
                   <input class="field__input" name="additionally" type="checkbox" value="sweetener" checked>
@@ -140,20 +144,23 @@
       </section>
       <footer class="page-main__footer contacts">
         <h2 class="visually-hidden">Контакты</h2>
-        <p class="contacts__title">
-          Приглашаем к сотрудничеству дилеров!
-        </p>
-        <p class="contacts__text">
-          ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
-        </p>
+        <div class="contacts__container container">
+          <p class="contacts__title">
+            Приглашаем к сотрудничеству дилеров!
+          </p>
+          <p class="contacts__text">
+            ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+          </p>
+        </div>
         <img class="contacts__pic" src="./img/location.png" width="320" height="362" alt="карта к нашему офису">
       </footer>
     </main>
 
     <footer class="page-footer">
-      <div class="page-footer__logo">
-        <img class="logo__pic" src="./img/logo-title.svg" width="128" height="24" alt="Логотип Cat-Energy">
-      </div>
+      <div class="page-footer__container container">
+        <div class="page-footer__logo">
+          <img class="logo__pic" src="./img/logo-title.svg" width="128" height="24" alt="Логотип Cat-Energy">
+        </div>
         <ul class="page-footer__social social__list">
           <li class="social-item">
             <a class="social__link social__link--vkontakte" href="#">
@@ -171,11 +178,12 @@
             </a>
           </li>
         </ul>
-          <a class="page-footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">
-            <span class="visually-hidden">Разработано в</span>
-            HTML Academy
-            <img class="copyright__logo-html" src="./img/htmlacademy.svg" width="27" height="34" alt="Логотип партнёра html academy">
-          </a>
+        <a class="page-footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">
+          <span class="visually-hidden">Разработано в</span>
+          HTML Academy
+          <img class="copyright__logo-html" src="./img/htmlacademy.svg" width="27" height="34" alt="Логотип партнёра html academy">
+        </a>
+      </div>
     </footer>
   </body>
 </html>

@@ -2,6 +2,28 @@
   padding: 20px;
 }
 
-.form__wrapper {
-  margin: 0;
+.form__container {
+  @media (min-width: $desktop-width) {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
+  }
+}
+
+.form__group--contacts {
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / -1;
+  }
+}
+
+.form__group--comment {
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / -1;
+  }
+}
+
+.form__group--additional {
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / -1;
+  }
 }

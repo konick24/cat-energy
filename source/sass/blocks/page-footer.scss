@@ -3,20 +3,13 @@
 }
 
 .page-footer__container {
-  width: 280px;
-  margin: 0 auto;
   padding: 40px 0 22px;
 
   @media (min-width: $tablet-width) {
-    width: 708px;
     display: grid;
     grid-template-columns: 163px 1fr 163px;
     padding: 56px 0 58px;
 
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 1220px;
   }
 }
 

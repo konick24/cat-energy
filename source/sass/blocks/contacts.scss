@@ -7,14 +7,11 @@
 }
 
 .contacts__container {
-  width: 280px;
-  margin: 0 auto;
   padding: 26px 0;
   display: grid;
   grid-template-columns: 140px 140px;
 
   @media (min-width: $tablet-width) {
-    width: 708px;
     grid-template-columns: 170px 170px;
     justify-content: space-between;
     padding: 56px 40px;
