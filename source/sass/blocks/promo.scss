@@ -20,12 +20,15 @@
     &::after {
       content: "";
       position: absolute;
-      top: -165px;
+      top: -200px;
       left: 50%;
-      width: 720px;
-      height: 694px;
+      bottom: 0;
+      right: 0;
       z-index: -2;
-      background-color: #68b738;
+      background-color: #63a63b;
+      background-image: url("../img/background-promo-large.jpg");
+      background-repeat: no-repeat;
+      background-position: 0% 100%;
     }
   }
 }

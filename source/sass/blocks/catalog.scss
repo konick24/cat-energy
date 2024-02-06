@@ -1,6 +1,11 @@
 .catalog {
 @media (min-width: $desktop-width) {
     padding-top: 62px;
+  }
+}
+
+.catalog__container {
+  @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 570px 570px;
     gap: 80px;
@@ -52,7 +57,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    font-size: 24px;
+    font-size: 36px;
     line-height: 36px;
     padding: 0;
 
@@ -65,7 +70,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    font-size: 36px;
     padding-left: 162px;
     min-height: 100px;
 
@@ -95,11 +99,24 @@
 }
 
 .catalog__link {
+  display: grid;
+  grid-template-columns: max-content 32px;
+  gap: 17px;
   font-family: $font-heading;
   font-size: 16px;
+  align-items: center;
   color: #000000;
   text-transform: uppercase;
   text-decoration: none;
+
+  &::after {
+    content: "";
+    width: 24px;
+    height: 10px;
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+    background-image: url("../img/arrow-right.svg");
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 20px;

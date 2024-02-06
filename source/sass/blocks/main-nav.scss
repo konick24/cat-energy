@@ -1,6 +1,4 @@
 .main-nav__list {
-  display: flex;
-  flex-direction: column;
   margin: 0;
   padding: 0;
   font-size: 20px;
@@ -11,6 +9,7 @@
   border-top: 1px solid #e6e6e6;
 
   @media (min-width: $tablet-width) {
+    display: flex;
     margin-right: -17px;
     flex-direction: row;
     font-size: 18px;
@@ -39,11 +38,10 @@
         left: 17px;
         bottom: 5px;
         height: 2px;
-        background-color: $color-primary;
+        background-color: #68b768;
       }
     }
-  }
-  & .main {
+
     @media (min-width: $desktop-width) {
       &::after {
         background-color: #ffffff;
@@ -64,9 +62,8 @@
     border: none;
   }
 
-  &--main {
-    @media (min-width: $desktop-width) {
-      color: #ffffff;
-    }
+  @media (min-width: $desktop-width) {
+    color: #ffffff;
   }
 }
+

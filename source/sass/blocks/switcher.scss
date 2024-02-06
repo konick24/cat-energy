@@ -1,0 +1,74 @@
+.switcher {
+  padding: 0 35px;
+  display: grid;
+  grid-template-columns: 49px 1fr 49px;
+  gap: 13px;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 70px 1fr 70px;
+    padding: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
+}
+
+.switcher__button {
+  justify-self: center;
+  font-family: $font-heading;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    font-size: 20px;
+    line-height: 30px;
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.24);
+  }
+}
+
+.switcher__toggler {
+  padding: 4px 6px;
+  display: flex;
+  justify-content: center;
+  background-color: #ffffff;
+  border-radius: 6px;
+
+  &::after {
+    content: "";
+    width: 36px;
+    height: 6px;
+    border-radius: 4px;
+    background-color: $color-primary;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.switcher--before .switcher__toggler {
+  justify-content: flex-start;
+}
+
+.switcher--after .switcher__toggler {
+  justify-content: flex-end;
+}
+
+.switcher__bar {
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+
+  appearance: none;
+  background-color: transparent;
+}
+
+.switcher__bar::-moz-range-thumb {
+  height: 8px;
+}

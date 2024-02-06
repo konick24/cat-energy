@@ -4,6 +4,7 @@
 }
 
 .page-header__nav {
+  position: relative;
   @media (min-width: $tablet-width) {
     width: 708px;
     padding: 24px 0;
@@ -14,12 +15,12 @@
 
   @media (min-width: $desktop-width) {
     width: 1220px;
-    padding: 70px 0 5px;
+    padding: 50px 0 5px;
   }
 }
 
 .page-header__bar {
-  width: 320px;
+  width: 87.5%;
   padding: 10px 20px;
   margin: 0 auto;
   display: grid;
@@ -43,11 +44,62 @@
 }
 
 .page-header__toggle {
+  position: relative;
   width: 40px;
   height: 40px;
   border: none;
+  background-color: transparent;
 
   @media (min-width: $tablet-width) {
     display: none;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .page-header__bar--closed .page-header__toggle::before {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    top: 11.75px;
+    left: 8px;
+    background-color: #000000;
+    box-shadow: 0 8px 0 0 #000000, 0 16px 0 0 #000000;
+  }
+
+  .page-header__bar--opened .page-header__toggle {
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      width: 24px;
+      height: 1.5px;
+      top: 18.75px;
+      left: 8px;
+      background-color: #000000;
+    }
+
+    &::before {
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+  }
+
+  .page-header__bar--closed + .main-nav__list {
+    display: none;
+  }
+
+  .page-header__bar--nojs + .main-nav__list {
+    position: static;
+  }
+
+  .page-header__bar--opened + .main-nav__list {
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-color: #ffffff;
   }
 }
