@@ -1,6 +1,12 @@
 .field-group {
-  padding: 20px 0;
+  padding: 0;
   border: none;
+
+  &--target {
+    padding: 20px;
+    margin: 0 -21px 0;
+    border: 1px solid #d9d9d9;
+  }
 }
 
 .field-group__heading {
@@ -10,8 +16,11 @@
 }
 
 .field-group__list {
+  margin: 0;
   padding: 0;
   list-style: none;
+  display: grid;
+  row-gap: 13px;
 
   &--contacts {
     @media (min-width: $desktop-width) {
@@ -33,3 +42,4 @@
     }
   }
 }
+

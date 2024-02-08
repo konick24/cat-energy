@@ -1,10 +1,14 @@
+.page-main__header {
+  padding: 27px 0 40px;
+}
+
 .page-main__heading {
   font-family: $font-heading;
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
   margin: 0;
-  margin-bottom: 32px;
+  margin-bottom: 40px;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
@@ -13,7 +17,6 @@
 }
 
 .page-main__subheading {
-  margin: 5px 0 19px;
   font-family: $font-heading;
   text-transform: uppercase;
 }

@@ -3,11 +3,21 @@
   font-size: 16px;
   text-transform: uppercase;
   color: #444444;
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  column-gap: 14px;
+  align-items: center;
 }
 
 .field__input {
+  padding: 14px;
   font-family: inherit;
   font-size: 16px;
-  line-height: 18px;
   text-transform: uppercase;
+  width: 100%;
+  border: 1px solid #e6e6e6;
+
+  &:hover {
+    border-color: #cdcdcd;
+  }
 }

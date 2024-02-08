@@ -246,13 +246,17 @@
   outline: none;
 }
 
+.page-main__header {
+  padding: 27px 0 40px;
+}
+
 .page-main__heading {
   font-family: "Oswald", sans-serif;
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
   margin: 0;
-  margin-bottom: 32px;
+  margin-bottom: 40px;
 }
 @media (min-width: 768px) {
   .page-main__heading {
@@ -262,7 +266,6 @@
 }
 
 .page-main__subheading {
-  margin: 5px 0 19px;
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
 }
@@ -1246,10 +1249,6 @@
   text-align: center;
 }
 
-.form {
-  padding: 20px;
-}
-
 @media (min-width: 1440px) {
   .form__container {
     display: grid;
@@ -1258,27 +1257,29 @@
   }
 }
 
-@media (min-width: 1440px) {
-  .form__group--contacts {
-    grid-column: 1/-1;
-  }
+.form__group {
+  margin: 0;
+}
+.form__group + .form__group {
+  margin-top: 25px;
 }
 
 @media (min-width: 1440px) {
-  .form__group--comment {
-    grid-column: 1/-1;
-  }
-}
-
-@media (min-width: 1440px) {
-  .form__group--additional {
+  .form__group--additional,
+.form__group--comment,
+.form__group--contacts {
     grid-column: 1/-1;
   }
 }
 
 .field-group {
-  padding: 20px 0;
+  padding: 0;
   border: none;
+}
+.field-group--target {
+  padding: 20px;
+  margin: 0 -21px 0;
+  border: 1px solid #d9d9d9;
 }
 
 .field-group__heading {
@@ -1288,8 +1289,11 @@
 }
 
 .field-group__list {
+  margin: 0;
   padding: 0;
   list-style: none;
+  display: grid;
+  row-gap: 13px;
 }
 @media (min-width: 1440px) {
   .field-group__list--contacts {
@@ -1316,20 +1320,70 @@
   font-size: 16px;
   text-transform: uppercase;
   color: #444444;
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  column-gap: 14px;
+  align-items: center;
 }
 
 .field__input {
+  padding: 14px;
   font-family: inherit;
   font-size: 16px;
-  line-height: 18px;
   text-transform: uppercase;
+  width: 100%;
+  border: 1px solid #e6e6e6;
+}
+.field__input:hover {
+  border-color: #cdcdcd;
 }
 
 .control {
+  position: relative;
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   text-transform: uppercase;
   color: #222222;
+  display: flex;
+  align-items: center;
+  min-height: 30px;
+}
+
+.control__mark {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: #ffffff;
+  border: 1px solid #cdcdcd;
+  border-radius: 50%;
+}
+
+.control__name {
+  padding-left: 45px;
+}
+
+.control__input[type=radio]:checked + .control__mark::after {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  background-color: #68b768;
+  border-radius: 50%;
+  top: calc(50% - 7px);
+  left: calc(50% - 7px);
+}
+
+.control__input[type=radio]:hover + .control__mark {
+  border: 1px solid #bababa;
+}
+
+.control__input[type=radio]:focus + .control__mark {
+  border: 2px solid #444444;
+}
+
+.control__input:disabled + .control__mark,
+.control__input:disabled ~ .control__name {
+  opacity: 0.3;
 }
 
 .logo img {

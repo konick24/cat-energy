@@ -1,7 +1,3 @@
-.form {
-  padding: 20px;
-}
-
 .form__container {
   @media (min-width: $desktop-width) {
     display:grid;
@@ -10,19 +6,17 @@
   }
 }
 
+.form__group {
+  margin: 0;
+
+  & + & {
+    margin-top: 25px;
+  }
+}
+
+.form__group--additional,
+.form__group--comment,
 .form__group--contacts {
-  @media (min-width: $desktop-width) {
-    grid-column: 1 / -1;
-  }
-}
-
-.form__group--comment {
-  @media (min-width: $desktop-width) {
-    grid-column: 1 / -1;
-  }
-}
-
-.form__group--additional {
   @media (min-width: $desktop-width) {
     grid-column: 1 / -1;
   }
