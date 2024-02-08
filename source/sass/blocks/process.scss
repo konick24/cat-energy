@@ -36,7 +36,39 @@
     top: 0;
     left: 0;
     background-color: $color-primary;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
     margin-top: -2px;
+  }
+
+  &--leaf {
+    &::before {
+      background-image: url("../img/icon_leaf.svg");
+    }
+  }
+
+  &--tub {
+    &::before {
+      background-image: url("../img/icon_tub.svg");
+    }
+  }
+
+  &--eat {
+    &::before {
+      background-image: url("../img/icon_eat.svg");
+    }
+  }
+
+  &--alarm {
+    &::before {
+      background-image: url("../img/icon_alarm.svg");
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-size: contain;
   }
 
   @media (min-width: $tablet-width) {

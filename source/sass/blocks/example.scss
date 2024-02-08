@@ -112,6 +112,10 @@
     font-size: 30px;
     line-height: 37px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
+  }
 }
 
 .example__spending {

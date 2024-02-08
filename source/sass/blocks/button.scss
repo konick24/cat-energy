@@ -7,4 +7,8 @@
   font-family: $font-heading;
   text-transform: uppercase;
   text-decoration: none;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
 }

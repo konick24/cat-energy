@@ -6,4 +6,12 @@
   font-size: 16px;
   text-decoration: none;
   color: #444444;
+
+  &:hover .copyright__pic{
+    color: #68b768;
+  }
+
+  &:active .copyright__pic{
+    opacity: 0.6;
+  }
 }
