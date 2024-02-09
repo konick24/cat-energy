@@ -1,6 +1,10 @@
 .contacts {
   background-color: #ffffff;
 
+  &:not(.contacts--main) {
+    background-color: #f2f2f2;
+  }
+
   @media (min-width: $desktop-width) {
     position: relative;
   }

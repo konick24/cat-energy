@@ -90,7 +90,9 @@
             </ul>
           </fieldset>
           <fieldset class="form__group form__group--contacts field-group">
-            <legend class="field-group__heading">Контактные данные (владельца кота)</legend>
+            <legend class="field-group__heading">
+              <span>Контактные данные<br>(владельца кота)</span>
+            </legend>
             <ul class="field-group__list field-group__list--contacts">
               <li class="field-group__item">
                 <label class="field">
@@ -106,14 +108,18 @@
               </li>
             </ul>
           </fieldset>
-          <div class="form-group form__group--comment field-group">
-            <label class="field-group__heading" for="comment">Комментарий</label>
-            <div class="field">
+          <div class="form__group form__group--comment field-group">
+            <label class="field-group__heading" for="comment">
+              <span>Комментарий</span>
+            </label>
+            <div class="field field--no-label">
               <textarea class="field__input" name="comment" id="comment" rows="5" placeholder="Расскажите обо всех повaдках кота"></textarea>
             </div>
           </div>
           <fieldset class="form__group form__group--additional field-group">
-            <legend class="field-group__heading">Дополнительно</legend>
+            <legend class="field-group__heading">
+              <span>Дополнительно</span>
+            </legend>
             <ul class="field-group__list field-group__list--additional">
               <li class="field-group__item field-group__item--checkbox">
                 <label class="field">
@@ -141,8 +147,10 @@
               </li>
             </ul>
           </fieldset>
-          <button class="form__button button" type="button">Отправить заявку</button>
-          <p class="form__additional">* — Обязательные поля</p>
+          <div class="form__footer">
+            <button class="form__button button" type="button">Отправить заявку</button>
+            <p class="form__additional">* — Обязательные поля</p>
+          </div>
         </form>
       </section>
       <footer class="page-main__footer contacts">

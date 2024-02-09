@@ -10,7 +10,7 @@
 }
 
 .field__input {
-  padding: 14px;
+  padding: 13px;
   font-family: inherit;
   font-size: 16px;
   text-transform: uppercase;
@@ -20,4 +20,8 @@
   &:hover {
     border-color: #cdcdcd;
   }
+}
+
+.field--no-label .field__input {
+  grid-column: 1 / -1;
 }

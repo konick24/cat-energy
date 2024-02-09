@@ -971,6 +971,9 @@
 .contacts {
   background-color: #ffffff;
 }
+.contacts:not(.contacts--main) {
+  background-color: #f2f2f2;
+}
 @media (min-width: 1440px) {
   .contacts {
     position: relative;
@@ -1272,6 +1275,20 @@
   }
 }
 
+.form__footer {
+  margin: 34px 0 32px;
+}
+
+.form__button {
+  width: 100%;
+}
+
+.form__additional {
+  text-align: center;
+  margin: 0;
+  margin-top: 21px;
+}
+
 .field-group {
   padding: 0;
   border: none;
@@ -1283,9 +1300,26 @@
 }
 
 .field-group__heading {
+  display: flex;
   font-family: "Oswald", sans-serif;
   font-size: 24px;
   line-height: 26px;
+  margin-bottom: 35px;
+}
+.field-group__heading span {
+  position: relative;
+  z-index: 1;
+  padding: 0 23px;
+  background-color: #ffffff;
+}
+.field-group__heading::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-top: 16px;
+  height: 2px;
+  background-color: #68b768;
 }
 
 .field-group__list {
@@ -1327,7 +1361,7 @@
 }
 
 .field__input {
-  padding: 14px;
+  padding: 13px;
   font-family: inherit;
   font-size: 16px;
   text-transform: uppercase;
@@ -1336,6 +1370,10 @@
 }
 .field__input:hover {
   border-color: #cdcdcd;
+}
+
+.field--no-label .field__input {
+  grid-column: 1/-1;
 }
 
 .control {
