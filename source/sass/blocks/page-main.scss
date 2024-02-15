@@ -17,6 +17,11 @@
 }
 
 .page-main__subheading {
+  margin: 0;
   font-family: $font-heading;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
 }

@@ -11,6 +11,10 @@
 
   & + & {
     margin-top: 25px;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 72px;
+    }
   }
 }
 
@@ -24,14 +28,30 @@
 
 .form__footer {
   margin: 34px 0 32px;
+
+  @media (min-width: $tablet-width) {
+    margin: 54px 0 72px;
+    display: grid;
+    grid-template-columns: 282px 1fr;
+    column-gap: 60px;
+  }
 }
 
 .form__button {
   width: 100%;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 
 .form__additional {
   text-align: center;
   margin: 0;
   margin-top: 21px;
+
+  @media (min-width: $tablet-width) {
+    text-align: start;
+  }
 }

@@ -7,6 +7,10 @@
   display: flex;
   align-items: center;
   min-height: 30px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
 }
 
 .control__mark {
@@ -16,11 +20,25 @@
   background-color: #ffffff;
   border: 1px solid #cdcdcd;
   border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .control__name {
   padding-left: 45px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 60px;
+  }
 }
+
+.control--checkbox .control__mark {
+  border-radius: 0;
+}
+
 
 .control__input[type="radio"]:checked + .control__mark::after {
   content: "";
@@ -31,13 +49,31 @@
   border-radius: 50%;
   top: calc(50% - 7px);
   left: calc(50% - 7px);
+
+  @media (min-width: $tablet-width) {
+    width: 18px;
+    height: 18px;
+    top: calc(50% - 9px);
+    left: calc(50% - 9px);
+  }
 }
 
-.control__input[type="radio"]:hover + .control__mark {
+.control__input[type="checkbox"]:checked + .control__mark::after {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 14px;
+  background-image: url("../img/check.svg");
+  top: calc(50% - 7px);
+  left: calc(50% - 9px);
+  z-index: 1  ;
+}
+
+.control__input:hover + .control__mark {
   border: 1px solid #bababa;
 }
 
-.control__input[type="radio"]:focus + .control__mark {
+.control__input:focus + .control__mark {
   border: 2px solid #444444;
 }
 

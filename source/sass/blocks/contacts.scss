@@ -50,6 +50,12 @@
   line-height: 20px;
   color: #444444;
   text-align: end;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 }
 
 .contacts__pic {

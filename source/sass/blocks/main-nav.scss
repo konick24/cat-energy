@@ -43,7 +43,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      &::after {
+      .main-nav__list--main &::after {
         background-color: #ffffff;
       }
     }
@@ -63,7 +63,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    color: #ffffff;
+    .main-nav__list--main & {
+      color: #ffffff;
+    }
   }
 
   &:link:hover {

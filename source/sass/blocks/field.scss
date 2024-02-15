@@ -7,6 +7,11 @@
   grid-template-columns: max-content 1fr;
   column-gap: 14px;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .field__input {
@@ -19,6 +24,11 @@
 
   &:hover {
     border-color: #cdcdcd;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    padding: 10px 18px;
   }
 }
 
