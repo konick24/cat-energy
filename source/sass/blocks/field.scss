@@ -1,4 +1,5 @@
 .field {
+  position: relative;
   font-family: $font-heading;
   font-size: 16px;
   text-transform: uppercase;
@@ -18,9 +19,14 @@
   padding: 13px;
   font-family: inherit;
   font-size: 16px;
+  line-height: 18px;
   text-transform: uppercase;
   width: 100%;
   border: 1px solid #e6e6e6;
+
+  .field--icon & {
+    padding-right: 42px;
+  }
 
   &:hover {
     border-color: #cdcdcd;
@@ -34,4 +40,18 @@
 
 .field--no-label .field__input {
   grid-column: 1 / -1;
+}
+
+.field__icon {
+  position: absolute;
+
+  &--email {
+    top: calc(50% - 7px);
+    right: 16px;
+  }
+
+  &--phone {
+    top: calc(50% - 10px);
+    right: 13px;
+  }
 }

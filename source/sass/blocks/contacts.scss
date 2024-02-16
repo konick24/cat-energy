@@ -49,12 +49,17 @@
   margin: 0;
   line-height: 20px;
   color: #444444;
-  text-align: end;
+  text-align: start;
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    text-align: end;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: start;
   }
 }
 

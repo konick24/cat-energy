@@ -96,7 +96,7 @@
 
 .page-header__bar {
   width: 87.5%;
-  padding: 10px 20px;
+  padding: 10px 0;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 34px 1fr 34px;
@@ -1033,13 +1033,19 @@
   margin: 0;
   line-height: 20px;
   color: #444444;
-  text-align: end;
+  text-align: start;
 }
 @media (min-width: 768px) {
   .contacts__text {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    text-align: end;
+  }
+}
+@media (min-width: 1440px) {
+  .contacts__text {
+    text-align: start;
   }
 }
 
@@ -1289,6 +1295,11 @@
     margin-top: 72px;
   }
 }
+@media (min-width: 1440px) {
+  .form__group + .form__group--target {
+    margin-top: 0;
+  }
+}
 
 @media (min-width: 1440px) {
   .form__group--additional,
@@ -1307,6 +1318,12 @@
     display: grid;
     grid-template-columns: 282px 1fr;
     column-gap: 60px;
+  }
+}
+@media (min-width: 1440px) {
+  .form__footer {
+    grid-column: 1/-1;
+    grid-template-columns: 568px 1fr;
   }
 }
 
@@ -1427,6 +1444,7 @@
 }
 
 .field {
+  position: relative;
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   text-transform: uppercase;
@@ -1447,9 +1465,13 @@
   padding: 13px;
   font-family: inherit;
   font-size: 16px;
+  line-height: 18px;
   text-transform: uppercase;
   width: 100%;
   border: 1px solid #e6e6e6;
+}
+.field--icon .field__input {
+  padding-right: 42px;
 }
 .field__input:hover {
   border-color: #cdcdcd;
@@ -1463,6 +1485,18 @@
 
 .field--no-label .field__input {
   grid-column: 1/-1;
+}
+
+.field__icon {
+  position: absolute;
+}
+.field__icon--email {
+  top: calc(50% - 7px);
+  right: 16px;
+}
+.field__icon--phone {
+  top: calc(50% - 10px);
+  right: 13px;
 }
 
 .control {
