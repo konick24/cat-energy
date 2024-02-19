@@ -1,5 +1,5 @@
 .button {
-  padding: 14px 26px;
+  padding: 11px 12px;
   display: inline-block;
   color: #ffffff;
   background-color: $color-primary;
@@ -10,5 +10,9 @@
 
   &:hover {
     background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
   }
 }

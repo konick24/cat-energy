@@ -32,6 +32,16 @@
     border-color: #cdcdcd;
   }
 
+  &:focus {
+    outline: 2px solid #444444;
+    outline-offset: -2px;
+  }
+
+  &:not(:placeholder-shown):invalid {
+    outline: 2px solid #FF8282;
+    outline-offset: -2px;
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
     padding: 10px 18px;
@@ -44,14 +54,18 @@
 
 .field__icon {
   position: absolute;
+  top: calc(50% - 12px);
+  right: 8px;
 
-  &--email {
-    top: calc(50% - 7px);
-    right: 16px;
+  @media (min-width: $tablet-width) {
+    right: 14px;
   }
 
-  &--phone {
-    top: calc(50% - 10px);
-    right: 13px;
+  .field__input:focus + & {
+    color: #68b768;
+  }
+
+  .field__input:not(:placeholder-shown):invalid + & {
+    color: #FF8282;
   }
 }
