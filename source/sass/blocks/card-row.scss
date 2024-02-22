@@ -1,6 +1,24 @@
 .card-row {
   padding: 14px 0 19px;
   border-top: 1px solid #cdcdcd;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 22px;
+    padding: 26px 37px 28px;
+    border: 1px solid #cdcdcd;
+    border-bottom: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 13px 0;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 245px;
+    column-gap: 38px;
+    border: none;
+    border-top: 1px solid #cdcdcd;
+  }
 }
 
 .card-row__heading {
@@ -11,6 +29,10 @@
   line-height: 16px;
   text-transform: uppercase;
   color: #222222;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
 
 .card-row__list {
@@ -20,10 +42,31 @@
   display: flex;
   justify-content: space-between;
   line-height: 14px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    justify-content: end;
+  }
+
+  @media (min-width: $tablet-width) {
+    justify-content: space-between;
+  }
 }
 
 .card-row__definition {
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    & ~ & {
+      margin-left: 50px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    & ~ & {
+      margin: 0;
+    }
+  }
 }
 
 .card-row__button {
@@ -31,4 +74,12 @@
   line-height: 20px;
   text-align: center;
   width: 100%;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1 / -1;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 3 / 4;
+  }
 }

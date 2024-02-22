@@ -1,5 +1,14 @@
 .catalog-additional {
+  position: relative;
   padding: 20px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 68px 0 76px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 75px 0 87px;
+  }
 }
 
 .catalog-additional__container {
@@ -11,6 +20,7 @@
 }
 
 .catalog-additional__heading {
+  margin: 0;
   margin-bottom: 34px;
   font-family: $font-heading;
   font-weight: 400;
@@ -23,19 +33,43 @@
     padding: 23px;
     margin-left: -23px;
     background-color: #ffffff;
+
+    @media (min-width: $tablet-width) {
+      margin: 0;
+      padding: 0 37px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-left: -37px;
+    }
   }
 
   &::before {
     content: "";
     position: absolute;
+    top: 36px;
     left: 0;
     right: 0;
-    margin-top: 16px;
     height: 2px;
     background-color: #68b768;
+
+    @media (min-width: $tablet-width) {
+      top: 90px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 97px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 80px;
   }
 
   @media (min-width: $desktop-width) {
+    padding: 0;
     grid-column: 1 / -1;
   }
 }
@@ -47,7 +81,12 @@
   list-style: none;
   border-bottom: 1px solid #cdcdcd;
 
+  @media (min-width: $tablet-width) {
+    margin-bottom: 70px;
+  }
+
   @media (min-width: $desktop-width) {
+    margin: 0;
     grid-column: 1 / 4;
   }
 }

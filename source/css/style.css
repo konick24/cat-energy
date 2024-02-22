@@ -19,7 +19,7 @@
 }
 
 .button {
-  padding: 11px 12px;
+  padding: 13px 26px;
   display: inline-block;
   color: #ffffff;
   background-color: #68b738;
@@ -1188,7 +1188,8 @@
   .products__list {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 60px;
+    column-gap: 60px;
+    row-gap: 68;
   }
 }
 @media (min-width: 1440px) {
@@ -1248,7 +1249,7 @@
     display: none;
   }
 }
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .card__heading {
     font-size: 20px;
     line-height: 24px;
@@ -1378,9 +1379,25 @@
     margin-top: 42px;
   }
 }
+@media (min-width: 1440px) {
+  .show-more__button {
+    margin-top: 35px;
+  }
+}
 
 .catalog-additional {
+  position: relative;
   padding: 20px 0;
+}
+@media (min-width: 768px) {
+  .catalog-additional {
+    padding: 68px 0 76px;
+  }
+}
+@media (min-width: 1440px) {
+  .catalog-additional {
+    padding: 75px 0 87px;
+  }
 }
 
 @media (min-width: 1440px) {
@@ -1392,6 +1409,7 @@
 }
 
 .catalog-additional__heading {
+  margin: 0;
   margin-bottom: 34px;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
@@ -1405,17 +1423,46 @@
   margin-left: -23px;
   background-color: #ffffff;
 }
+@media (min-width: 768px) {
+  .catalog-additional__heading span {
+    margin: 0;
+    padding: 0 37px;
+  }
+}
+@media (min-width: 1440px) {
+  .catalog-additional__heading span {
+    margin-left: -37px;
+  }
+}
 .catalog-additional__heading::before {
   content: "";
   position: absolute;
+  top: 36px;
   left: 0;
   right: 0;
-  margin-top: 16px;
   height: 2px;
   background-color: #68b768;
 }
+@media (min-width: 768px) {
+  .catalog-additional__heading::before {
+    top: 90px;
+  }
+}
+@media (min-width: 1440px) {
+  .catalog-additional__heading::before {
+    top: 97px;
+  }
+}
+@media (min-width: 768px) {
+  .catalog-additional__heading {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 80px;
+  }
+}
 @media (min-width: 1440px) {
   .catalog-additional__heading {
+    padding: 0;
     grid-column: 1/-1;
   }
 }
@@ -1427,8 +1474,14 @@
   list-style: none;
   border-bottom: 1px solid #cdcdcd;
 }
+@media (min-width: 768px) {
+  .catalog-additional__list {
+    margin-bottom: 70px;
+  }
+}
 @media (min-width: 1440px) {
   .catalog-additional__list {
+    margin: 0;
     grid-column: 1/4;
   }
 }
@@ -1436,6 +1489,26 @@
 .card-row {
   padding: 14px 0 19px;
   border-top: 1px solid #cdcdcd;
+}
+@media (min-width: 768px) {
+  .card-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 22px;
+    padding: 26px 37px 28px;
+    border: 1px solid #cdcdcd;
+    border-bottom: none;
+  }
+}
+@media (min-width: 1440px) {
+  .card-row {
+    padding: 13px 0;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 245px;
+    column-gap: 38px;
+    border: none;
+    border-top: 1px solid #cdcdcd;
+  }
 }
 
 .card-row__heading {
@@ -1447,6 +1520,11 @@
   text-transform: uppercase;
   color: #222222;
 }
+@media (min-width: 768px) {
+  .card-row__heading {
+    margin: 0;
+  }
+}
 
 .card-row__list {
   margin: 0;
@@ -1456,9 +1534,30 @@
   justify-content: space-between;
   line-height: 14px;
 }
+@media (min-width: 768px) {
+  .card-row__list {
+    margin: 0;
+    justify-content: end;
+  }
+}
+@media (min-width: 768px) {
+  .card-row__list {
+    justify-content: space-between;
+  }
+}
 
 .card-row__definition {
   margin: 0;
+}
+@media (min-width: 768px) {
+  .card-row__definition ~ .card-row__definition {
+    margin-left: 50px;
+  }
+}
+@media (min-width: 1440px) {
+  .card-row__definition ~ .card-row__definition {
+    margin: 0;
+  }
 }
 
 .card-row__button {
@@ -1467,6 +1566,16 @@
   text-align: center;
   width: 100%;
 }
+@media (min-width: 768px) {
+  .card-row__button {
+    grid-column: 1/-1;
+  }
+}
+@media (min-width: 1440px) {
+  .card-row__button {
+    grid-column: 3/4;
+  }
+}
 
 .offer {
   padding: 186px 60px 43px;
@@ -1474,10 +1583,23 @@
   background-image: url("../img/icon_offer.svg"), url("../img/background-offer.png");
   background-repeat: no-repeat;
   background-position: 50% 59px, 50% 50%;
+  background-size: auto, cover;
   color: #ffffff;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
+}
+@media (min-width: 768px) {
+  .offer {
+    padding: 70px 125px 70px 422px;
+    background-position: 77px 50%, 50% 60%;
+  }
+}
+@media (min-width: 1440px) {
+  .offer {
+    padding: 185px 41px 42px;
+    background-position: 50% 50px, 50% 60%;
+  }
 }
 
 .offer__text {
