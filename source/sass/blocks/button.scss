@@ -5,6 +5,7 @@
   background-color: $color-primary;
   border: none;
   font-family: $font-heading;
+  text-align: center;
   text-transform: uppercase;
   text-decoration: none;
 
@@ -14,5 +15,15 @@
 
   &:active {
     color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.button--secondary {
+  &:hover {
+    background-color: #ebebeb;
+  }
+
+  &:active {
+    background: rgba(235, 235, 235, 0.3);
   }
 }

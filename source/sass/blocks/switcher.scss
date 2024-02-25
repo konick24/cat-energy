@@ -30,6 +30,14 @@
     line-height: 30px;
     border-bottom: 1px dotted rgba(0, 0, 0, 0.24);
   }
+
+  &:hover {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.24);
+  }
+
+  &:active {
+    border-bottom-color: transparent;
+  }
 }
 
 .switcher__toggler {
