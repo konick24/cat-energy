@@ -37,7 +37,11 @@
     margin: 0;
     padding: 0;
     width: 174px;
-    grid-template-columns: 34px 1fr;
+    grid-template-columns: 61px 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 71px 1fr;
   }
 }
 

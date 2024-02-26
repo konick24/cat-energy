@@ -11,8 +11,13 @@
       <nav class="page-header__nav page-header__nav--main">
         <div class="page-header__bar page-header__bar--closed page-header__bar--nojs">
           <a class="page-header__logo logo">
-            <img class="logo__icon" src="./img/logo-icon.svg" width="34" height="38" alt="Cat-Energy">
-            <img class="logo__title" src="./img/logo-title.svg" width="101" height="19" alt="">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="../img/logo-icon-desktop.svg">
+              <source media="(min-width: 768px)" srcset="../img/logo-icon-tablet.svg">
+              <img class="logo__icon" src="../img/logo-icon.svg" width="34" height="38" alt="Cat-Energy">
+            </picture>
+              <img class="logo__title" src="../img/logo-title.svg" width="101" height="19" alt="">
+
           </a>
           <button class="page-header__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
