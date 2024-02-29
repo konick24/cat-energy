@@ -7,27 +7,36 @@
 
   @media (min-width: $desktop-width) {
     position: relative;
+    display: grid;
+    grid-template-columns: 1220px;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
   }
 }
 
 .contacts__container {
   padding: 26px 0;
+  margin: 0 auto;
+  width: 280px;
   display: grid;
   grid-template-columns: 140px 140px;
 
   @media (min-width: $tablet-width) {
+    width: 708px;
     grid-template-columns: 170px 170px;
     justify-content: space-between;
     padding: 56px 40px;
   }
 
   @media (min-width: $desktop-width) {
-    position: absolute;
-    top: 95px;
-    left: 110px;
+    position: relative;
+    margin: 0;
     width: 565px;
+
     background-color: #ffffff;
     padding: 56px 80px;
+    z-index: 1;
   }
 }
 
@@ -71,5 +80,12 @@
 
   @media (min-width: $tablet-width) {
     height: 400px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
   }
 }

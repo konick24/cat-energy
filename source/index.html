@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Кэт энерджи: Функциональное питание для котов</title>
     <link href="./css/style.css" rel="stylesheet">
+    <link rel="icon" href="./favicon.ico">
+    <link rel="icon" href="./img/favicons/32.svg" type="imege/svg+xml">
+    <link rel="apple-touch-icon" href="./img/favicons/180.png">
+    <link rel="manifest" href="./manifest.webmanifest">
   </head>
   <body class="page__body">
     <header class="page-header">
@@ -12,12 +16,11 @@
         <div class="page-header__bar page-header__bar--closed page-header__bar--nojs">
           <a class="page-header__logo logo">
             <picture>
-              <source media="(min-width: 1440px)" srcset="../img/logo-icon-desktop.svg">
-              <source media="(min-width: 768px)" srcset="../img/logo-icon-tablet.svg">
-              <img class="logo__icon" src="../img/logo-icon.svg" width="34" height="38" alt="Cat-Energy">
+              <source media="(min-width: 1440px)" srcset="./img/logo-icon-desktop.svg">
+              <source media="(min-width: 768px)" srcset="./img/logo-icon-tablet.svg">
+              <img class="logo__icon" src="./img/logo-icon.svg" width="34" height="38" alt="Cat-Energy">
             </picture>
-              <img class="logo__title" src="../img/logo-title.svg" width="101" height="19" alt="">
-
+            <img class="logo__title" src="./img/logo-title.svg" width="101" height="19" alt="">
           </a>
           <button class="page-header__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
@@ -41,7 +44,11 @@
         <div class="promo__container container">
           <h1 class="promo__heading">Функциональное питание для котов</h1>
           <p class="promo__text">Занялся собой? Займись котом!</p>
-          <img class="promo__img" src="./img/promo.png" width="280" height="270" alt="">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="./img/promo-large.png 1x, ./img/promo-large@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="./img/promo-medium.png 1x, ./img/promo-medium@2x.png 2x">
+            <img class="promo__img" src="./img/promo.png" srcset="./img/promo@2x.png" width="280" height="270" alt="">
+          </picture>
           <a class="promo__button button" href="#">Подобрать программу</a>
         </div>
       </header>
@@ -98,15 +105,24 @@
                 <dd class="example__definition">60 дней</dd>
               </div>
             </dl>
-            <p class="example__spending">Затраты на питание: 15 000 руб.</p>
+            <p class="example__spending">
+              <span class="example__expenses">Затраты на питание:</span>
+              <span class="example__total">15 000 руб.</span>
+            </p>
           </div>
           <div class="example__view">
             <div class="example__images">
               <div class="example__image example__image--before example__image--active">
-                <img src="./img/cat-fat.png" width="280" height="232" alt="Кот до употребления корма: выглядит ленивым, толстым и страшным">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="./img/cat-fat-medium.png 1x, ./img/cat-fat-medium@2x.png 2x">
+                  <img src="./img/cat-fat-small.png" srcset="./img/cat-fat-small@2x.png" width="280" height="232" alt="Кот до употребления корма: выглядит ленивым, толстым и страшным">
+                </picture>
               </div>
               <div class="example__image example__image--after">
-                <img src="./img/cat-skinny.png" width="280" height="232" alt="Кот после употребления корма: выглядит молодым, худым и бодрым">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="./img/cat-skinny-medium.png 1x, ./img/cat-skinny-medium.png, 2x">
+                  <img src="./img/cat-skinny-small.png" srcset="./img/cat-skinny-small@2x.png" width="280" height="232" alt="Кот после употребления корма: выглядит молодым, худым и бодрым">
+                </picture>
               </div>
             </div>
             <div class="example__switcher switcher switcher--before">
@@ -120,7 +136,7 @@
       </section>
       <footer class="page-main__footer contacts contacts--main">
         <h2 class="visually-hidden">Контакты</h2>
-        <div class="contacts__container container">
+        <div class="contacts__container">
           <p class="contacts__title">
             Приглашаем к сотрудничеству дилеров!
           </p>

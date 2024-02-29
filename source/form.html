@@ -11,7 +11,11 @@
       <nav class="page-header__nav">
         <div class="page-header__bar page-header__bar--closed page-header__bar--nojs">
           <a class="page-header__logo logo" href="./index.html">
-            <img class="logo__icon" src="./img/logo-icon.svg" width="34" height="38" alt="Cat-Energy">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="./img/logo-icon-desktop.svg">
+              <source media="(min-width: 768px)" srcset="./img/logo-icon-tablet.svg">
+              <img class="logo__icon" src="./img/logo-icon.svg" width="34" height="38" alt="Cat-Energy">
+            </picture>
             <img class="logo__title" src="./img/logo-title.svg" width="101" height="19" alt="">
           </a>
           <button class="page-header__toggle" type="button">
@@ -170,7 +174,7 @@
       </section>
       <footer class="page-main__footer contacts">
         <h2 class="visually-hidden">Контакты</h2>
-        <div class="contacts__container container">
+        <div class="contacts__container">
           <p class="contacts__title">
             Приглашаем к сотрудничеству дилеров!
           </p>

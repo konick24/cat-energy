@@ -3,7 +3,7 @@
   background-color: $color-primary;
   background-image:
       url("../img/icon_offer.svg"),
-      url("../img/background-offer.png");
+      url("../img/background-offer-small.png");
   background-repeat: no-repeat;
   background-position: 50% 59px, 50% 50%;
   background-size: auto, cover;
@@ -13,14 +13,38 @@
   line-height: 20px;
   text-align: center;
 
+  @media (min-resolution: 2dppx) {
+    background-image:
+    url("../img/icon_offer.svg"),
+    url("../img/background-offer-small@2x.png");
+  }
+
   @media (min-width: $tablet-width) {
     padding: 70px 125px 70px 422px;
     background-position: 77px 50%, 50% 60%;
+    background-image:
+    url("../img/icon_offer.svg"),
+    url("../img/background-offer-medium.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image:
+      url("../img/icon_offer.svg"),
+      url("../img/background-offer-medium@2x.png");
+    }
   }
 
   @media (min-width: $desktop-width) {
     padding: 185px 41px 42px;
-    background-position: 50% 50px, 50% 60%;
+    background-position: 50% 50px, 50% 50%;
+    background-image:
+    url("../img/icon_offer.svg"),
+    url("../img/background-offer-large.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image:
+      url("../img/icon_offer.svg"),
+      url("../img/background-offer-large@2x.png");
+    }
   }
 }
 

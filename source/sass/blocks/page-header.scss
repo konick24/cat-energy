@@ -5,17 +5,17 @@
 
 .page-header__nav {
   position: relative;
+
   @media (min-width: $tablet-width) {
     width: 708px;
     padding: 24px 0;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 174px 1fr;
+    grid-template-columns: max-content 1fr;
   }
 
   @media (min-width: $desktop-width) {
     width: 1220px;
-    padding: 50px 0 5px;
   }
 
   @media (max-width: $mobile-width-only) {
@@ -26,17 +26,16 @@
 }
 
 .page-header__bar {
-  width: 87.5%;
-  padding: 10px 0;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 34px 1fr 34px;
-  gap: 16px;
+  @media (max-width: $mobile-width-only) {
+    margin: 0 auto;
+    padding: 9px 20px 17px;
+    width: 320px;
+    display: grid;
+    grid-template-columns: 34px 1fr 34px;
+    gap: 16px;
+  }
 
   @media (min-width: $tablet-width) {
-    margin: 0;
-    padding: 0;
-    width: 174px;
     grid-template-columns: 61px 1fr;
   }
 

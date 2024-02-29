@@ -50,10 +50,11 @@
   }
 }
 
-.card__pic {
+.card__picture, .card__pic {
   grid-area: pic;
   align-self: center;
   justify-self: center;
+  width:auto;
 }
 
 .card__list {

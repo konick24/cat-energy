@@ -36,5 +36,14 @@
 }
 
 .logo__title {
+  width: 101px;
   justify-self: center;
+
+  @media (min-width: $tablet-width) {
+    width: 102px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 118px;
+  }
 }
