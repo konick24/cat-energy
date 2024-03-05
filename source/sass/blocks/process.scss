@@ -1,5 +1,5 @@
 .process {
-  padding: 20px 0 50px;
+  padding: 45px 0 25px;
 
   @media (min-width: $desktop-width) {
     padding: 71px 0 20px;
@@ -15,6 +15,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 60px;
+    row-gap: 25px;
     counter-reset: process;
   }
 
@@ -73,16 +74,16 @@
 
   @media (min-width: $tablet-width) {
     padding: 0;
-    padding-top: 150px;
+    padding-top: 145px;
     padding-right: 75px;
     counter-increment: process;
-    margin-bottom: 94px;
+    margin-bottom: 75px;
 
     &::before {
       margin: 0;
       width: 80px;
       height: 80px;
-      top: 40px;
+      top: 32px;
       left: 0;
     }
 
@@ -90,8 +91,8 @@
       content: counter(process);
       position: absolute;
       z-index: -1;
-      top: 0px;
-      left: 120px;
+      top: -8px;
+      left: 115px;
       font-family: $font-heading;
       font-size: 280px;
       line-height: 280px;

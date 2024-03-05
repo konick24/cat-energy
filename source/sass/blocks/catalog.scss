@@ -1,4 +1,8 @@
 .catalog {
+@media (min-width: $tablet-width) {
+  margin-top: -42px;
+}
+
 @media (min-width: $desktop-width) {
     padding-top: 62px;
   }
@@ -13,12 +17,13 @@
 }
 
 .catalog__item {
-  padding: 20px;
+  padding: 22px 20px;
   margin-bottom: 20px;
   background-color: #f2f2f2;
 
   @media (min-width: $tablet-width) {
-    padding: 77px 316px 53px 52px;
+    padding: 70px 316px 60px 52px;
+    margin-bottom: 30px;
   }
 
   @media (min-width: $desktop-width) {
@@ -35,7 +40,7 @@
   position: relative;
   min-height: 50px;
   margin: 0;
-  margin-bottom: 22px;
+  margin-bottom: 24px;
   padding-left: 70px;
   display: flex;
   align-items: center;
@@ -72,8 +77,8 @@
   }
 
   &--pro::after {
-    top: 10px;
-    left: -10px;
+    top: 13px;
+    left: -7px;
     width: 67px;
     height: 28px;
     background-image: url("../img/cat-pro.svg");
@@ -84,24 +89,25 @@
     font-size: 36px;
     line-height: 36px;
     padding: 0;
+    margin-bottom: 18px;
 
     &::before {
-      left: 400px;
-      top: 0;
+      left: 394px;
+      top: 22px;
       width: 200px;
       height: 200px;
     }
 
     &--slim::after {
-      top: -12px;
-      left: 433px;
+      top: 11px;
+      left: 424px;
       width: 140px;
       height: 194px;
     }
 
     &--pro::after {
-      top: 50px;
-      left: 365px;
+      top: 65px;
+      left: 360px;
       width: 268px;
       height: 112px;
     }
@@ -138,10 +144,10 @@
   margin: 0;
   padding-bottom: 22px;
   border-bottom: 1px solid #D9D9D9;
-  margin-bottom: 15px;
+  margin-bottom: 17px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 26px;
+    margin-bottom: 32px;
     border: none;
   }
 
@@ -172,6 +178,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
+    gap: 25px;
   }
 
   &:hover {

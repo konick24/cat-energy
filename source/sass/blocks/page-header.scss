@@ -8,7 +8,7 @@
 
   @media (min-width: $tablet-width) {
     width: 708px;
-    padding: 24px 0;
+    padding: 30px 0;
     margin: 0 auto;
     display: grid;
     grid-template-columns: max-content 1fr;
@@ -28,7 +28,7 @@
 .page-header__bar {
   @media (max-width: $mobile-width-only) {
     margin: 0 auto;
-    padding: 9px 20px 17px;
+    padding: 12px 20px 13px;
     width: 320px;
     display: grid;
     grid-template-columns: 34px 1fr 34px;

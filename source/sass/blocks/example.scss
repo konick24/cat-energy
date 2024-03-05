@@ -1,9 +1,10 @@
 .example {
-  padding: 25px 0 40px;
+  padding: 25px 0 43px;
   background-color: #EAEAEA;
 
   @media (min-width: $tablet-width) {
-    background-image: linear-gradient(to top, #ebebeb 462px, #ffffff 462px);
+    padding-bottom: 60px;
+    background-image: linear-gradient(to top, #ebebeb 445px, #ffffff 445px);
     border-top: 1px solid #e6e6e6;
   }
 
@@ -13,7 +14,7 @@
 }
 
 .example__container {
-  padding-top: 5px;
+  padding-top: 18px;
 
   @media (min-width: $desktop-width) {
     padding-top: 43px;
@@ -24,12 +25,13 @@
 }
 
 .example__content {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 
   @media (min-width: $tablet-width) {
     width: 708px;
     display: grid;
     grid-template-columns: 366px 1fr;
+    margin-bottom: 90px;
   }
 
   @media (min-width: $desktop-width) {
@@ -44,7 +46,7 @@
 
   @media (min-width: $tablet-width) {
     grid-column: 1 / -1;
-    margin: 31px 0 52px;
+    margin: 25px 0 52px;
   }
 
   @media (min-width: $desktop-width) {
@@ -62,6 +64,7 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
+    gap: 40px;
   }
 
   @media (min-width: $desktop-width) {
@@ -103,8 +106,8 @@
 
 .example__definition {
   margin: 0;
-  margin-bottom: 8px;
-  padding-top: 18px;
+  margin-bottom: 7px;
+  padding-top: 15px;
   font-family: $font-heading;
   font-size: 24px;
   line-height: 24px;
@@ -113,6 +116,7 @@
   @media (min-width: $tablet-width) {
     font-size: 30px;
     line-height: 37px;
+    margin-bottom: 11px;
   }
 
   @media (min-width: $desktop-width) {

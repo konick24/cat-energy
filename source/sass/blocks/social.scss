@@ -1,5 +1,5 @@
 .social__list {
-  padding: 12px 0;
+  padding: 15px 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -23,7 +23,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 8px;
+  margin: 0 11px;
 }
 
 .social__link {
@@ -50,4 +50,21 @@
   right: 0;
   bottom: 0;
   margin: auto;
+
+  @media (min-width: $tablet-width) {
+    .social__link--vkontakte & {
+      width: 29px;
+      height: 17px;
+    }
+
+    .social__link--instagram & {
+      width: 23px;
+      height: 23px;
+    }
+
+    .social__link--telegram & {
+      width: 28px;
+      height: 22px;
+    }
+  }
 }
