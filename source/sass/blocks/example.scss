@@ -9,6 +9,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding-bottom: 75px;
+    background-image: linear-gradient(to top, #ebebeb 460px, #ffffff 460px);
     border: none;
   }
 }
@@ -17,7 +19,7 @@
   padding-top: 18px;
 
   @media (min-width: $desktop-width) {
-    padding-top: 43px;
+    margin-top: -13px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 40px;
@@ -50,7 +52,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 146px 0 69px;
+    margin: 95px 0 53px;
   }
 }
 
@@ -167,6 +169,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-top: -45px;
+    margin-bottom: 22px;
     padding: 0;
   }
 }

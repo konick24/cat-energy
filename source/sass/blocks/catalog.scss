@@ -4,7 +4,7 @@
 }
 
 @media (min-width: $desktop-width) {
-    padding-top: 62px;
+    margin-top: 82px;
   }
 }
 
@@ -27,7 +27,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 77px 52px 55px;
+    padding: 48px 52px 61px;
     margin-bottom: 0;
   }
 }
@@ -114,6 +114,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-bottom: 38px;
     padding-left: 162px;
     min-height: 100px;
 
@@ -179,6 +180,10 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     gap: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 9px;
   }
 
   &:hover {
