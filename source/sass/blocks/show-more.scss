@@ -6,10 +6,10 @@
   background-position: 50% 25px;
 
   @media (min-width: $tablet-width) {
-    padding: 160px 38px 38px;
+    padding: 165px 38px 38px;
     display: flex;
     flex-direction: column;
-    margin-top: 80px;
+    margin-top: 65px;
     background-image: url("../img/plus-large.svg");
     background-position: 50% 52px;
     border: 1px solid #f2f2f2;
@@ -63,10 +63,6 @@
   color: #444444;
 
   @media (min-width: $tablet-width) {
-    margin-top: 42px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-top: 35px;
+    margin-top: 60px;
   }
 }

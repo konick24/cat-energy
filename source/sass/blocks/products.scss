@@ -2,6 +2,10 @@
   @media (max-width: $mobile-width-only) {
     border-bottom: 1px solid #ebebeb;
   }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 60px;
+  }
 }
 
 .products__list {
@@ -14,12 +18,13 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 60px;
-    row-gap: 68;
+    row-gap: 68px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 1fr);
-    gap: 80px;
+    column-gap: 80px;
+    row-gap: 74px;
   }
 }
 

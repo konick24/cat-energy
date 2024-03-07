@@ -5,14 +5,14 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 22px;
-    padding: 26px 37px 28px;
+    gap: 25px;
+    padding: 28px 37px 28px;
     border: 1px solid #cdcdcd;
     border-bottom: none;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 13px 0;
+    padding: 13px 0 16px;
     align-items: center;
     grid-template-columns: 1fr 1fr 245px;
     column-gap: 38px;
@@ -39,33 +39,36 @@
   margin: 0;
   padding: 0;
   margin-bottom: 15px;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 80px;
   line-height: 14px;
 
   @media (min-width: $tablet-width) {
     margin: 0;
-    justify-content: end;
+    column-gap: 15px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     justify-content: space-between;
+    margin: 7px 0;
+    align-self: end;
   }
 }
 
 .card-row__definition {
   margin: 0;
 
+  & ~ & {
+    justify-self: end;
+  }
+
   @media (min-width: $tablet-width) {
-    & ~ & {
-      margin-left: 50px;
-    }
+    justify-self: end;
+    align-self: end;
   }
 
   @media (min-width: $desktop-width) {
-    & ~ & {
-      margin: 0;
-    }
+    justify-self: start;
   }
 }
 

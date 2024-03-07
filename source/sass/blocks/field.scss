@@ -6,7 +6,7 @@
   color: #444444;
   display: grid;
   grid-template-columns: max-content 1fr;
-  column-gap: 14px;
+  column-gap: 12px;
   align-items: center;
 
   @media (min-width: $tablet-width) {
@@ -54,8 +54,8 @@
 
 .field__icon {
   position: absolute;
-  top: calc(50% - 12px);
-  right: 8px;
+  top: calc(50% - 10px);
+  right: 13px;
 
   @media (min-width: $tablet-width) {
     right: 14px;

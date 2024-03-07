@@ -3,22 +3,22 @@
   background-color: #EAEAEA;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 60px;
-    background-image: linear-gradient(to top, #ebebeb 445px, #ffffff 445px);
+    padding: 40px 0 60px;
+    background-image: linear-gradient(to top, #ebebeb 460px, #ffffff 460px);
     border-top: 1px solid #e6e6e6;
   }
 
   @media (min-width: $desktop-width) {
     padding-bottom: 75px;
-    background-image: linear-gradient(to top, #ebebeb 460px, #ffffff 460px);
     border: none;
   }
 }
 
 .example__container {
-  padding-top: 18px;
+  padding-top: 5px;
 
   @media (min-width: $desktop-width) {
+    padding: 0;
     margin-top: -13px;
     display: grid;
     grid-template-columns: 1fr 1fr;

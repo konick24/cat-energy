@@ -1,5 +1,9 @@
 .page-main__header {
   padding: 27px 0 40px;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 43px;
+  }
 }
 
 .page-main__heading {

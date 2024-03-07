@@ -10,7 +10,6 @@
     display: grid;
     grid-template-columns: 1220px;
     justify-content: center;
-    align-items: center;
     height: 400px;
   }
 }
@@ -30,10 +29,12 @@
   }
 
   @media (min-width: $desktop-width) {
-    position: relative;
+    position: absolute;
     margin: 0;
     width: 565px;
-
+    grid-template-columns: 170px 155px;
+    top: 95px;
+    left: 110px;
     background-color: #ffffff;
     padding: 56px 80px;
     z-index: 1;

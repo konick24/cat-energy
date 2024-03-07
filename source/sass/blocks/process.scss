@@ -1,5 +1,9 @@
 .process {
-  padding: 45px 0 25px;
+  padding: 20px 0 25px;
+
+  @media (min-width: $tablet-width) {
+    padding: 45px 0 25px;
+  }
 
   @media (min-width: $desktop-width) {
     padding: 73px 0 20px;
@@ -9,10 +13,12 @@
 .process__list {
   margin: 0;
   padding: 0;
+  padding-top: 5px;
   list-style: none;
 
   @media (min-width: $tablet-width) {
     display: grid;
+    padding: 0;
     grid-template-columns: 1fr 1fr;
     column-gap: 60px;
     row-gap: 25px;
