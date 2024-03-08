@@ -12,6 +12,7 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
+    column-gap: 15px;
   }
 }
 
@@ -45,6 +46,10 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     padding: 10px 18px;
+
+    &--comment {
+      padding: 14px 18px;
+    }
   }
 }
 

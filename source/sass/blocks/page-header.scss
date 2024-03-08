@@ -12,6 +12,11 @@
     margin: 0 auto;
     display: grid;
     grid-template-columns: max-content 1fr;
+
+    &--main {
+      grid-template-columns: max-content 50%;
+      justify-content: space-between;
+    }
   }
 
   @media (min-width: $desktop-width) {

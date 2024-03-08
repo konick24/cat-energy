@@ -9,5 +9,11 @@
   @media (min-width: $desktop-width) {
     width: 1220px;
   }
+
+  &--form {
+    @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+      width: 630px;
+    }
+  }
 }
 
