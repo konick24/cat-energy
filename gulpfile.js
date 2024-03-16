@@ -4,6 +4,12 @@ import sass from 'gulp-dart-sass';
 import postcss from 'gulp-postcss';
 import autoprefixer from 'autoprefixer';
 import browser from 'browser-sync';
+import htmlmin from 'gulp-htmlmin';
+import csso from 'postcss-csso';
+import rename from 'gulp-rename';
+import terser from 'gulp-terser';
+import imagemin from 'gulp-imagemin';
+import webp from 'gulp-webp';
 
 // Styles
 
@@ -12,10 +18,50 @@ export const styles = () => {
     .pipe(plumber())
     .pipe(sass().on('error', sass.logError))
     .pipe(postcss([
-      autoprefixer()
+      autoprefixer(),
+      csso()
     ]))
-    .pipe(gulp.dest('source/css', { sourcemaps: '.' }))
+    .pipe(rename('style.min.css'))
+    .pipe(gulp.dest('build/css', { sourcemaps: '.' }))
     .pipe(browser.stream());
+}
+
+//html
+
+export const html = () => {
+  return gulp.src('source/*.html')
+    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(gulp.dest('build'));
+}
+
+//scripts
+
+export const script = () => {
+  return gulp.src('source/js/app.js')
+  .pipe(terser())
+  .pipe(rename('app.min.js'))
+  .pipe(gulp.dest('build/js'));
+}
+
+//images
+
+export const optimazeImages = () => {
+  return gulp.src('source/img/**/*.{jpg,svg,png}')
+  .pipe(imagemin())
+  .pipe(gulp.dest('build/img'));
+}
+
+export const copyImages = () => {
+  return gulp.src('source/img/**/*.{jpg,svg,png}')
+  .pipe(gulp.dest('build/img'));
+}
+
+// wedp
+
+export const createWebp = () => {
+  return gulp.src('source/img/**/*.{jpg,png}')
+  .pipe(webp({quality: 90}))
+  .pipe(gulp.dest('build/img'));
 }
 
 // Server
@@ -23,7 +69,7 @@ export const styles = () => {
 const server = (done) => {
   browser.init({
     server: {
-      baseDir: 'source'
+      baseDir: 'build'
     },
     cors: true,
     notify: false,
@@ -31,6 +77,7 @@ const server = (done) => {
   });
   done();
 }
+
 
 // Watcher
 
@@ -41,5 +88,5 @@ const watcher = () => {
 
 
 export default gulp.series(
-  styles, server, watcher
+  styles, html, server, watcher
 );
