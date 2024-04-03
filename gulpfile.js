@@ -1,5 +1,6 @@
 import gulp from 'gulp';
 import plumber from 'gulp-plumber';
+import sourcemap from 'gulp-sourcemaps';
 import sass from 'gulp-dart-sass';
 import postcss from 'gulp-postcss';
 import autoprefixer from 'autoprefixer';
@@ -12,6 +13,25 @@ import imagemin from 'gulp-imagemin';
 import webp from 'gulp-webp';
 import svgstore from 'gulp-svgstore';
 import del from 'del';
+import cheerio from 'gulp-cheerio';
+
+// const gulp = require("gulp");
+// const plumber = require("gulp-plumber");
+// const sourcemap = require("gulp-sourcemaps");
+// const sass = require("gulp-dart-sass");
+// const postcss = require("gulp-postcss");
+// const autoprefixer = require("autoprefixer");
+// const browser = require("browser-sync").create();
+// const htmlmin = require("gulp-htmlmin");
+// const csso = require("postcss-csso");
+// const rename = require("gulp-rename");
+// const terser = require("gulp-terser");
+// const imagemin = require("gulp-imagemin");
+// const webp = require("gulp-webp");
+// const svgstore = require("gulp-svgstore");
+// const del = require("del");
+
+
 
 // Styles
 
@@ -70,7 +90,7 @@ export const createWebp = () => {
 
 export const sprite = () => {
   return gulp.src("source/img/icons/*.svg")
-  .pipe(svgstore({inlinesvg: true}))
+  .pipe(svgstore({inlineSvg: true}))
   .pipe(rename("sprite.svg"))
   .pipe(gulp.dest("build/img"));
 }
@@ -144,14 +164,14 @@ export default gulp.series(
   copy,
   copyImages,
   gulp.parallel(
-    styles, 
-    html, 
+    styles,
+    html,
     script,
     sprite,
     createWebp,
   ),
   gulp.series(
-    server, 
+    server,
     watcher
   )
 );
